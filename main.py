@@ -9,7 +9,7 @@ import base64
 app = FastAPI(title="QR Code Generator API", version="1.0.0")
 security = HTTPBearer()
 
-API_KEY=os.get...Y", "default-dev-key-change-in-production")
+API_KEY=*** "default-dev-key-change-in-production")
 
 def verify_api_key(credentials: HTTPAuthorizationCredentials = Depends(security)):
     if credentials.credentials != API_KEY:
@@ -63,7 +63,7 @@ def generate_qr(req: QRRequest, _: str = Depends(verify_api_key)):
         raise HTTPException(status_code=400, detail=str(e))
 
 try:
-    from mangum import Mangam
-    handler = Mangam(app, lifespan="off")
+    from mangum import Mangum
+    handler = Mangum(app, lifespan="off")
 except ImportError:
     pass
