@@ -46,3 +46,6 @@ curl -X POST https://qr-code-generator-mu-blush.vercel.app/generate \\
 ## Monetize
 - RapidAPI: $19/month for 10k requests
 - Direct subscriptions via ExtensionPay
+
+## Postman
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://raw.githubusercontent.com/BT-Builds/qr-code-generator/main/postman_collection.json)
